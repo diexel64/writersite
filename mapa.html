@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/favicon.ico">
+
+    <title>Edalom - Mapa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Edalom</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Relatos</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="rel-libelula.html">La libélula</a>
+              <a class="dropdown-item" href="#">Los escarabajos</a>
+              <a class="dropdown-item" href="rel-picosdelsol.html">El Torneo de los Picos del Sol</a>
+              <a class="dropdown-item" href="#">Jinetes de dragón</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historia.html">Enciclopedia</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="mapa.html">Mapa <span class="sr-only">(current)</span></a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="subscribe.html">Suscripción</a>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    <main role="main">
+      <div class="container">
+
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="display-4 text-center">El mapa completo de Edalom</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style type="text/css">
+          /**THE SAME CSS IS USED IN ALL 3 DEMOS**/    
+          /**gallery margins**/  
+          ul.gallery{    
+          margin-left: 3vw;     
+          margin-right:3vw;  
+          }    
+
+          .zoom {      
+          -webkit-transition: all 0.35s ease-in-out;    
+          -moz-transition: all 0.35s ease-in-out;    
+          transition: all 0.35s ease-in-out;     
+          cursor: -webkit-zoom-in;      
+          cursor: -moz-zoom-in;      
+          cursor: zoom-in;  
+          }     
+
+          .zoom:hover,  
+          .zoom:active,   
+          .zoom:focus {
+          /**adjust scale to desired size, 
+          add browser prefixes**/
+          -ms-transform: scale(1.5);    
+          -moz-transform: scale(1.5);  
+          -webkit-transform: scale(1.5);  
+          -o-transform: scale(1.5);  
+          transform: scale(1.5);    
+          position:relative;      
+          z-index:100;  
+          }
+
+          /**To keep upscaled images visible on mobile, 
+          increase left & right margins a bit**/  
+          @media only screen and (max-width: 768px) {   
+          ul.gallery {      
+          margin-left: 15vw;       
+          margin-right: 15vw;
+          }
+
+          /**TIP: Easy escape for touch screens,
+          give gallery's parent container a cursor: pointer.**/
+          .DivName {cursor: pointer}
+          }
+        </style>
+
+        <img class="rounded img-fluid zoom" src="img/mapa.jpg">
+        
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2021 Alberto Iturralde. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/js/holder.min.js"></script>
+  </body>
+</html>

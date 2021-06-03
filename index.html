@@ -15,7 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
   </head>
-  
+
   <body>
 
     <header>
@@ -35,13 +35,19 @@
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="rel-libelula.html">La libélula</a>
               <a class="dropdown-item" href="#">Los escarabajos</a>
-              <a class="dropdown-item" href="#">El Torneo de los Picos del Sol</a>
+              <a class="dropdown-item" href="rel-picosdelsol.html">El Torneo de los Picos del Sol</a>
               <a class="dropdown-item" href="#">Jinetes de dragón</a>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="historia.html">Enciclopedia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mapa.html">Mapa</a>
           </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="subscribe.html">Suscripción</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -54,6 +60,7 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -67,12 +74,12 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img class="second-slide" src="img/rel-jinetesdragon.jpg" alt="Second slide">
+              <img class="second-slide" src="img/rel-picosdelsol.png" alt="Second slide">
               <div class="container">
                 <div class="carousel-caption">
-                  <h1>Jinetes de dragón.</h1>
-                  <p>Anlong es un muchacho de aldea que, gracias a su coraje, logrará hacerse un sitio en las cumbres del Tiber, donde se forman a los jinetes de dragón.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer</a></p>
+                  <h1>El Torneo de los Picos del Sol.</h1>
+                  <p>Perseguida por su tribu, Furia escapa de las Llanuras rumbo a la península de los Picos del Sol.</p>
+                  <p><a class="btn btn-lg btn-primary" href="rel-picosdelsol.html" role="button">Leer</a></p>
                 </div>
               </div>
             </div>
@@ -82,6 +89,16 @@
                 <div class="carousel-caption">
                   <h1>Los Escarabajos.</h1>
                   <p>Tres ser traicionado por sus propios amigos, Akun escapa al desierto y funda el movimiento rebelde de los escarabajos, cuyo objetivo es acabar con el Emperador de Mohad.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="forth-slide" src="img/rel-jinetesdragon.jpg" alt="Forth slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Jinetes de dragón.</h1>
+                  <p>Anlong es un muchacho de aldea que, gracias a su coraje, logrará hacerse un sitio en las cumbres del Tiber, donde se forman a los jinetes de dragón.</p>
                   <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer</a></p>
                 </div>
               </div>
@@ -104,6 +121,53 @@
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
       <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Historia <span class="text-muted">de Edalom.</span></h2>
+            <p class="lead">El gran libro de Historia de Edalom, la enciclopedia que lleva siglos escribiéndose en Alderion por los ilustrados de la Casa Docta.</p>
+            <p><a class="btn btn-lg btn-primary" href="historia.html" role="button">Leer</a></p>
+          </div>
+          <div class="col-md-5">
+            <!--quitar img-fluid para talla exacta -->
+            <img class="featurette-image rounded" src="img/historia.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450" height="280">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Bestiario <span class="text-muted">de Edalom.</span></h2>
+            <p class="lead">Las criaturas más extrañas que habitan el fantástico mundo de Edalom.</p>
+            <p><a class="btn btn-lg btn-primary disabled" href="#" role="button">Leer</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <!--quitar img-fluid para talla exacta -->
+            <img class="featurette-image rounded" src="img/bestiarioo.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px"> 
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Razas <span class="text-muted">de Edalom.</span></h2>
+            <p class="lead">Todas las razas, guerreros, brujas y especialistas de Edalom.</p>
+            <p><a class="btn btn-lg btn-primary disabled" href="#" role="button">Leer</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image rounded" src="img/razass.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
 
         <!-- Three columns of text below the carousel -->
 
@@ -131,53 +195,17 @@
 
         </div><!-- /.row -->
 
+        <!-- Three columns of text below the carousel -->
 
-        <!-- START THE FEATURETTES -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="img/rel-picosdelsol.png" alt="Generic placeholder image" width="340" height="200">
+            <h2>El Torneo de los Picos del Sol</h2>
+            <p><a class="btn btn-secondary" href="rel-picosdelsol.html" role="button">Leer &raquo;</a></p>
+            <p>Perseguida por su tribu, Furia escapa de las Llanuras rumbo a la península de los Picos del Sol.</p>
+          </div><!-- /.col-lg-4 -->
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Historia <span class="text-muted">de Edalom.</span></h2>
-            <p class="lead">El gran libro de Historia de Edalom, la enciclopedia que lleva siglos escribiéndose en las islas del Borde.</p>
-            <p><a class="btn btn-lg btn-primary" href="historia.html" role="button">Leer</a></p>
-          </div>
-          <div class="col-md-5">
-            <!--quitar img-fluid para talla exacta -->
-            <img class="featurette-image rounded" src="img/historia.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450" height="280">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Bestiario <span class="text-muted">de Edalom.</span></h2>
-            <p class="lead">Las criaturas más extrañas que habitan el fantástico mundo de Edalom.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer</a></p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <!--quitar img-fluid para talla exacta -->
-            <img class="featurette-image rounded" src="img/bestiarioo.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px"> 
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Razas <span class="text-muted">de Edalom.</span></h2>
-            <p class="lead">Todas las razas, guerreros, brujas y especialistas de Edalom.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer</a></p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image rounded" src="img/razass.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
+        </div><!-- /.row -->
 
       </div><!-- /.container -->
 
