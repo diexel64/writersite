@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/favicon.ico">
+
+    <title>Mapa de Edalom</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/historia.css" rel="stylesheet">
+  </head>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="edalom.html">Edalom <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gundolan.html">Gundolan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="subscribe.html">Suscripción</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="edalom.html">Edalom</a>
+          <a class="p-2 text-muted" href="relatos-edm.html">Relatos</a>
+          <a class="p-2 text-muted" href="mapa-edm.html">Mapa</a>
+          <a class="p-2 text-muted" href="bestiario-edm.html">Bestiario</a>
+          <a class="p-2 text-muted" href="enciclopedia-edm.html">Enciclopedia</a>
+          <a class="p-2 text-muted" href="rel-libelula-edm.html">La Libelula</a>
+          <a class="p-2 text-muted" href="rel-picosdelsol-edm.html">El Torneo de los Picos del Sol</a>
+        </nav>
+      </div>
+
+      <main role="main">
+
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="display-4 text-center">Mapa de Edalom</h1>
+                <p class="text-center">Encuentra aquí el mapa completo de Edalom, en grande si pasas el cursor por la imagen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style type="text/css">
+          /**THE SAME CSS IS USED IN ALL 3 DEMOS**/    
+          /**gallery margins**/  
+          ul.gallery{    
+          margin-left: 3vw;     
+          margin-right:3vw;  
+          }    
+
+          .zoom {      
+          -webkit-transition: all 0.35s ease-in-out;    
+          -moz-transition: all 0.35s ease-in-out;    
+          transition: all 0.35s ease-in-out;     
+          cursor: -webkit-zoom-in;      
+          cursor: -moz-zoom-in;      
+          cursor: zoom-in;  
+          }     
+
+          .zoom:hover,  
+          .zoom:active,   
+          .zoom:focus {
+          /**adjust scale to desired size, 
+          add browser prefixes**/
+          -ms-transform: scale(1.5);    
+          -moz-transform: scale(1.5);  
+          -webkit-transform: scale(1.5);  
+          -o-transform: scale(1.5);  
+          transform: scale(1.5);    
+          position:relative;      
+          z-index:100;  
+          }
+
+          /**To keep upscaled images visible on mobile, 
+          increase left & right margins a bit**/  
+          @media only screen and (max-width: 768px) {   
+          ul.gallery {      
+          margin-left: 15vw;       
+          margin-right: 15vw;
+          }
+
+          /**TIP: Easy escape for touch screens,
+          give gallery's parent container a cursor: pointer.**/
+          .DivName {cursor: pointer}
+          }
+        </style>
+
+        <img class="rounded img-fluid zoom" src="img/mapa.jpg">
+        
+      </div><!-- /.container -->
+
+      <hr class="featurette-divider">
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="text-center">&copy; 2021 Alberto Iturralde. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/js/holder.min.js"></script>
+  </body>
+</html>
