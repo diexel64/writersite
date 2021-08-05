@@ -98,6 +98,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="btn-group-vertical justify-content-between">
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="Mapa" data-nbpdf="100">Mapa &raquo;</button>
               <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="Prólogo" data-nbpdf="0">Prólogo &raquo;</button>
               <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="Capítulo 1" data-nbpdf="1">Capítulo 1 &raquo;</button>
               <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="Capítulo 2" data-nbpdf="2">Capítulo 2 &raquo;</button>
@@ -170,7 +171,12 @@
         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
         // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
         var partNb = button.data('nbpdf')
-        var insertPdf = '<div class="embed-responsive" style="padding-bottom:100%"><object class="pdf-file" data="assets\\docs\\lib-'+partNb+'.pdf" type="application/pdf" width="100%" height="100%"></object></div>'
+        if (partNb == "100"){
+          var insertPdf = '<div class="embed-responsive" style="padding-bottom:100%"><object class="pdf-file" data="assets\\docs\\lib-'+partNb+'.jpg" type="application/pdf" width="100%" height="100%"></object></div>'
+        }
+        else{
+          var insertPdf = '<div class="embed-responsive" style="padding-bottom:100%"><object class="pdf-file" data="assets\\docs\\lib-'+partNb+'.pdf" type="application/pdf" width="100%" height="100%"></object></div>'
+        }
         var modal = $(this)
         modal.find('.modal-title').text(partTitle)
         modal.find('.modal-body').html(insertPdf)
