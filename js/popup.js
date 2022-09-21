@@ -13,6 +13,10 @@ $(document).ready(function(){
 			$("#popupModal").show();
 			console.log("Pop up already shown");
 		}
+
+		$("#closeBtn").click(function(){
+			$("#popupModal").hide();
+		})
 	}
 
 })
