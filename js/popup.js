@@ -10,7 +10,6 @@ $(document).ready(function(){
 			sessionStorage.setItem("alreadyShow", "already shown");
 			$("#popupModal").show();
 		}else{
-			$("#popupModal").show();
 			console.log("Pop up already shown");
 		}
 
